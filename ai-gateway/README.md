@@ -8,4 +8,10 @@ This module covers the layer between applications and model services. Models may
 
 [AI Gateway: Problems, Users, and Product Boundaries](problems-users-and-product-boundaries.md)
 
+## Interface design
+
+[One Interface, Many Models: What Should an AI Gateway Standardize?](one-interface-many-models.md)
+
+How a PM can decide what to unify and what to keep provider-specific.
+
 [Back to the handbook](../README.md)
