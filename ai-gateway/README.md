@@ -24,6 +24,16 @@ Understand tokens, RPM, TPM, concurrency, TTFT, generation speed, and measuremen
 
 Compare task quality, service behavior, capacity, and cost against the needs of a real workload.
 
+## Cost optimization
+
+[Cheaper Model Calls, More Expensive Tasks?](cheaper-model-calls-more-expensive-tasks.md)
+
+Separate caching, compression, and model routing from their hidden costs. Compare cost per successful task rather than token spend alone.
+
+[Model Routing: Who Should Choose, and How Do We Know It Works?](model-routing-decisions-and-evaluation.md)
+
+Separate task-aware model selection from endpoint routing. Decide what belongs in the application or gateway, and evaluate the complete workflow.
+
 ## Traffic controls
 
 [AI Gateway Rate Limits: What Should Each Limit Control?](rate-limit-scopes.md)

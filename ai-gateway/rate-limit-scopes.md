@@ -42,6 +42,8 @@ Testing can validate sustainable throughput. It is not authoritative quota disco
 
 Record the RPM, TPM, and concurrency limits with their accounting rules. Also record quota ownership: the account, project, model, region, or other pool sharing each allowance.
 
+For a provider-specific example, [OpenAI's rate-limit documentation](https://developers.openai.com/api/docs/guides/rate-limits) explains organization and project limits, shared model-family limits, and request accounting. Those upstream rules are evidence to collect, not a requirement to copy the provider's scopes into gateway user policies.
+
 Two endpoints using one provider account may share a quota. Treating them as independent pools would overstate capacity. If another application consumes the same quota outside the gateway, local counters alone cannot know the full remaining allowance.
 
 When limits are unknown, show that explicitly and require an operator-selected fallback policy. Do not silently interpret missing data as unlimited capacity.

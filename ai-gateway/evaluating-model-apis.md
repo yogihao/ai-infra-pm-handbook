@@ -31,6 +31,8 @@ Even endpoints offering the same named model can differ in serving configuration
 
 Keep safety and policy requirements explicit where relevant. A refusal can be correct behavior on a prohibited request and an unwanted failure on a legitimate one. Evaluate both against a defined rubric.
 
+[Holistic Evaluation of Language Models (HELM)](https://arxiv.org/abs/2211.09110) provides a research precedent for evaluating multiple metrics across scenarios rather than selecting on accuracy alone. It supports the multi-dimensional approach, not the specific production acceptance rules in this article.
+
 ## 3. Define the workload before choosing a winner
 
 Write a short workload description. Include who uses it, what they need, and what counts as success.
@@ -58,6 +60,8 @@ Define the rubric before comparing candidates:
 - If using a model as a judge, calibrate it against human judgments. Do not assume its scores are unbiased or authoritative.
 
 Schema validity alone does not establish factual correctness. A well-formed tool call can still choose the wrong tool or arguments.
+
+The original paper [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685) investigates position, verbosity, and self-enhancement biases in model judges. Its findings motivate calibration; agreement on its benchmarks does not guarantee reliable judgment on a different application.
 
 Keep a held-out set for the final comparison. Repeatedly adjusting prompts against every example can make a weak candidate look stronger than it is on unseen work. Repeat stochastic cases where variation matters.
 

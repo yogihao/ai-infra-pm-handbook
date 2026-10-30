@@ -24,6 +24,8 @@ A token is a unit of text, such as a word, part of a word, or punctuation. Diffe
 
 APIs may account for cached input, reasoning, and multimodal content differently. Visible text alone may not explain all usage or cost.
 
+For one concrete accounting category, [OpenAI's prompt-caching documentation](https://developers.openai.com/api/docs/guides/prompt-caching) explains cached-prefix usage and model-specific cache pricing. A cached input token is not the same as a removed input token.
+
 ## 3. Traffic, allowances, and concurrency
 
 | Metric | Meaning | PM interpretation |
@@ -95,6 +97,8 @@ Non-streaming responses do not directly expose client-observed TTFT. For multi-s
 | Aggregate throughput | Total work delivered across requests per unit of time. | Not the streaming speed of one response. |
 
 Report sample size, request sizes, test duration, and traffic level. State what was counted, including failures, and compare similar workloads.
+
+For an implementation reference, [NVIDIA's GenAI-Perf documentation](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/perf_analyzer/genai-perf/README.html) describes TTFT, inter-token latency, request throughput, and configurable request load. Check its exact measurement conventions before comparing its results with another tool.
 
 ## 7. PM questions
 

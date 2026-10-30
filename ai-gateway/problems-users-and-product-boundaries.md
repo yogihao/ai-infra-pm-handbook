@@ -85,6 +85,8 @@ Tool/MCP gateways add execution and authorization concerns. This series starts w
 
 Before building, compare existing API gateways, managed AI gateways, and shared tooling. Choose based on unmet needs and operational ownership.
 
+For a concrete implementation, [Cloudflare's official AI Gateway documentation](https://developers.cloudflare.com/ai-gateway/) describes analytics, caching, rate limiting, retries, and model fallback. It illustrates the category; it does not prescribe this article's product boundaries.
+
 ## 4. PM judgment: start with one valuable promise
 
 For teams that need shared controls and usage attribution, a first promise could be:

@@ -28,6 +28,8 @@ The same test applies to input parameters. A different name may be easy to map. 
 
 The reverse is also true: identical names do not guarantee identical meaning. For example, the same `temperature` value does not promise equivalent behavior across models.
 
+For a concrete state example, [OpenAI's conversation-state documentation](https://developers.openai.com/api/docs/guides/conversation-state) describes chaining responses with `previous_response_id` and persisting conversations. A common gateway field cannot by itself make those provider-managed objects available at another provider.
+
 ## 3. What belongs in the common interface?
 
 Start with capabilities that applications repeatedly need. The gateway can standardize shared controls as well as model-facing behavior:
