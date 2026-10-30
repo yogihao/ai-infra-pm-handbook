@@ -1,8 +1,6 @@
 # AI Gateway: Problems, Users, and Product Boundaries
 
-Status: draft
-
-This is a draft product framework, not a specific implementation. The use cases are illustrative. They do not describe real incidents or measured results.
+This is a product framework, not a specific implementation. The use cases are illustrative. They do not describe real incidents or measured results.
 
 ## 1. Problem: why add a gateway?
 

@@ -1,7 +1,5 @@
 # One Interface, Many Models: What Should an AI Gateway Standardize?
 
-Status: draft
-
 This is a product framework, not a provider compatibility guide. Examples are illustrative.
 
 The [first article](problems-users-and-product-boundaries.md) explains why teams might add a gateway. This article focuses on one decision: **what to unify, and what to keep provider-specific.**

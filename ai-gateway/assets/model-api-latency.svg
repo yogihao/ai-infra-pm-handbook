@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="680" viewBox="0 0 1080 680" style="width:100%;height:auto;max-width:1080px" role="img" aria-labelledby="title description">
+  <title id="title">Model API latency: one request, several measurements</title>
+  <desc id="description">An illustrative client-observed streaming request starts at zero seconds, delivers its first token at one second, and completes at five seconds. TTFT is one second and end-to-end latency is five seconds. One hundred more tokens arrive after the first over four seconds, averaging twenty-five tokens per second. A separate close-up shows that inter-token latency measures the gap between individual tokens.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto-start-reverse">
+      <path d="M1 1 L6 4 L1 7" fill="none" stroke="#64748b" stroke-width="1.5"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #0f172a; }
+      .muted { fill: #475569; }
+      .small { font-size: 15px; }
+      .body { font-size: 18px; }
+      .label { font-size: 19px; font-weight: 650; }
+      .guide { stroke: #cbd5e1; stroke-width: 1.5; stroke-dasharray: 4 5; }
+    </style>
+  </defs>
+  <rect width="1080" height="680" rx="20" fill="#ffffff"/>
+  <text x="48" y="52" font-size="28" font-weight="700">One request. Several ways to measure speed.</text>
+  <text x="48" y="83" class="body muted">Client-observed streaming example · illustrative, not a benchmark</text>
+
+  <text x="96" y="140" class="label">Request sent</text>
+  <text x="272" y="140" class="label">First token</text>
+  <text x="984" y="140" text-anchor="end" class="label">Response complete</text>
+  <text x="984" y="165" text-anchor="end" class="small muted">Final token + completion event</text>
+
+  <rect x="96" y="192" width="178" height="54" rx="8" fill="#dbeafe"/>
+  <rect x="274" y="192" width="710" height="54" rx="8" fill="#ccfbf1"/>
+  <text x="185" y="225" text-anchor="middle" class="body" style="fill:#1e40af">Waiting</text>
+  <text x="629" y="225" text-anchor="middle" class="body" style="fill:#115e59">Output streaming · 100 more tokens after the first</text>
+
+  <path d="M96 178 V372 M274 178 V300 M984 178 V372" class="guide"/>
+  <circle cx="96" cy="219" r="6" fill="#2563eb"/>
+  <circle cx="274" cy="219" r="6" fill="#0f766e"/>
+  <circle cx="984" cy="219" r="6" fill="#0f766e"/>
+  <text x="96" y="272" text-anchor="middle" class="small muted">0 s</text>
+  <text x="274" y="272" text-anchor="middle" class="small muted">1 s</text>
+  <text x="984" y="272" text-anchor="middle" class="small muted">5 s</text>
+
+  <path d="M99 304 H271" stroke="#64748b" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="185" y="333" text-anchor="middle" class="label" style="fill:#1e40af">TTFT = 1 s</text>
+  <path d="M283 304 H981" stroke="#64748b" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="629" y="333" text-anchor="middle" class="label" style="fill:#115e59">Generation interval = 4 s</text>
+
+  <path d="M99 374 H981" stroke="#64748b" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="540" y="405" text-anchor="middle" class="label">End-to-end latency = 5 s</text>
+
+  <rect x="48" y="440" width="470" height="174" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="70" y="472" class="label">Close-up: gaps between tokens</text>
+  <text x="70" y="497" class="small muted">Schematic, not on the timeline scale above</text>
+  <path d="M91 534 H463" stroke="#cbd5e1" stroke-width="2"/>
+  <circle cx="106" cy="534" r="7" fill="#0f766e"/>
+  <circle cx="222" cy="534" r="7" fill="#0f766e"/>
+  <circle cx="405" cy="534" r="7" fill="#0f766e"/>
+  <path d="M109 561 H219" stroke="#64748b" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="70" y="593" class="small">Inter-token latency = time between two tokens</text>
+
+  <rect x="538" y="440" width="494" height="174" rx="12" fill="#f0fdfa" stroke="#99f6e4"/>
+  <text x="560" y="472" class="label">Average output generation speed</text>
+  <text x="560" y="512" font-size="25" font-weight="700" style="fill:#115e59">100 tokens / 4 s = 25 tokens/s</text>
+  <text x="560" y="546" class="body">Average token interval: 40 ms</text>
+  <text x="560" y="590" class="small muted">Averages can hide pauses during streaming.</text>
+
+  <text x="48" y="650" class="small muted">Token-level timing assumed. RPM and TPM quotas are allowances, not response speed.</text>
+</svg>

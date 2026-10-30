@@ -14,4 +14,29 @@ This module covers the layer between applications and model services. Models may
 
 How a PM can decide what to unify and what to keep provider-specific.
 
+## Metrics and evaluation
+
+[Model API Metrics: Traffic, Limits, and Latency](model-api-metrics.md)
+
+Understand tokens, RPM, TPM, concurrency, TTFT, generation speed, and measurement boundaries.
+
+[How to Evaluate a Model API: From Benchmarks to Product Fit](evaluating-model-apis.md)
+
+Compare task quality, service behavior, capacity, and cost against the needs of a real workload.
+
+## Traffic controls
+
+[AI Gateway Rate Limits: What Should Each Limit Control?](rate-limit-scopes.md)
+
+Separate upstream capacity from user allowances, and choose model and API-key caps deliberately.
+
+## Quick concept links
+
+| Topic | Jump to |
+| --- | --- |
+| Traffic and capacity | [Tokens](model-api-metrics.md#2-tokens-are-units-of-model-input-and-output) · [RPM](model-api-metrics.md#3-traffic-allowances-and-concurrency) · [TPM](model-api-metrics.md#3-traffic-allowances-and-concurrency) · [Concurrency](model-api-metrics.md#3-traffic-allowances-and-concurrency) · [Throughput](model-api-metrics.md#3-traffic-allowances-and-concurrency) |
+| Response speed | [TTFT](model-api-metrics.md#4-response-speed-has-several-parts) · [Inter-token latency](model-api-metrics.md#4-response-speed-has-several-parts) · [End-to-end latency](model-api-metrics.md#4-response-speed-has-several-parts) |
+| Reading results | [Average](model-api-metrics.md#6-look-beyond-averages) · [p50](model-api-metrics.md#6-look-beyond-averages) · [p95](model-api-metrics.md#6-look-beyond-averages) |
+| Rate-limit scopes | [Upstream quotas](rate-limit-scopes.md#3-learn-upstream-limits-do-not-assume-them) · [User limits](rate-limit-scopes.md#5-give-each-user-a-shared-allowance) · [Per-model caps](rate-limit-scopes.md#5-give-each-user-a-shared-allowance) |
+
 [Back to the handbook](../README.md)
