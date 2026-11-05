@@ -14,6 +14,12 @@ This module covers the layer between applications and model services. Models may
 
 How a PM can decide what to unify and what to keep provider-specific.
 
+## Identity and access
+
+[Who Should Own an AI Gateway API Key?](api-key-ownership.md)
+
+Separate user and application identities from project usage. Design self-service credentials and offboarding without relying on one shared secret.
+
 ## Metrics and evaluation
 
 [Model API Metrics: Traffic, Limits, and Latency](model-api-metrics.md)
