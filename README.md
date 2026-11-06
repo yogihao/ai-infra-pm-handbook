@@ -21,6 +21,8 @@ The handbook is a work in progress. Coverage will grow as new problems and lesso
 ## Modules
 
 - [AI gateway](ai-gateway/README.md): connecting applications to model services, with a focus on product boundaries and operational tradeoffs.
+- [MCP for complex systems](mcp/README.md): designing agent capabilities around business workflows, permissions, and useful user outcomes.
+- [Evaluation](evaluation/README.md): evaluating capability contracts and intelligent behavior, from development through production.
 
 ## License
 

@@ -10,7 +10,7 @@ Which is faster?
 
 They describe different things: **how much traffic is allowed, how soon output starts, and how soon it finishes.** No single number answers all three.
 
-This article explains the vocabulary. The [evaluation guide](evaluating-model-apis.md) explains how to use it to choose an API.
+This article explains the vocabulary. The [evaluation guide](../evaluation/evaluating-model-apis.md) explains how to use it to choose an API.
 
 ## 2. Tokens are units of model input and output
 
@@ -109,4 +109,4 @@ For an implementation reference, [NVIDIA's GenAI-Perf documentation](https://doc
 
 **Reusable lesson:** a metric becomes useful only when its unit, counting rules, measurement boundary, and workload are clear.
 
-[Next: evaluating a model API](evaluating-model-apis.md) | [Back to the AI gateway module](README.md)
+[Next: evaluating a model API](../evaluation/evaluating-model-apis.md) | [Back to the AI gateway module](README.md)

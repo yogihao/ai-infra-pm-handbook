@@ -69,7 +69,7 @@ Compare candidate models and the routed system on representative held-out tasks.
 
 Then measure the real workflow. In an agent, one model choice can cause extra tool calls or failure later. Count the whole task's success, cost, and latency.
 
-[RouterBench](https://arxiv.org/abs/2403.12031) compares routing strategies, but does not replace multi-step application evaluation. The [API evaluation guide](evaluating-model-apis.md) covers component testing and judge calibration.
+[RouterBench](https://arxiv.org/abs/2403.12031) compares routing strategies, but does not replace multi-step application evaluation. The [API evaluation guide](../evaluation/evaluating-model-apis.md) covers component testing and judge calibration.
 
 ## 5. Put the split into practice
 

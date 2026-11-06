@@ -10,7 +10,7 @@ None of these facts alone tells a PM which API to choose.
 
 **A good model API meets a particular workload's quality and service requirements at an acceptable cost.** An interactive assistant and an overnight document-processing job can reasonably choose different APIs.
 
-Use the [metrics primer](model-api-metrics.md) for definitions. This article focuses on the decision.
+Use the [metrics primer](../ai-gateway/model-api-metrics.md) for definitions. This article focuses on the decision.
 
 ## 2. Evaluate the model and the service
 
@@ -120,4 +120,4 @@ Repeat a bounded evaluation when model versions, prompts, routing, prices, or wo
 
 **Reusable lesson:** select for successful user outcomes under realistic conditions, not for the largest benchmark score or the lowest headline price.
 
-[Back to the metrics primer](model-api-metrics.md) | [Back to the AI gateway module](README.md)
+[Back to the metrics primer](../ai-gateway/model-api-metrics.md) | [Back to the evaluation module](README.md)

@@ -37,7 +37,7 @@ Suppose a document-processing workload costs $100 before optimization. Compressi
 
 The main-model bill fell 30%, but the total rose 5%. The correction cost is an assumed monetary value for extra human work, not a provider charge. This example assumes unchanged output volume and no other costs; it does not predict actual compression results or establish equal final quality.
 
-The harder problem is detecting what was lost. Invalid JSON is easy to reject. A fluent summary that misses a contractual exception is not. A model judge adds expense and can make mistakes; the [evaluation guide](evaluating-model-apis.md) covers judge calibration.
+The harder problem is detecting what was lost. Invalid JSON is easy to reject. A fluent summary that misses a contractual exception is not. A model judge adds expense and can make mistakes; the [evaluation guide](../evaluation/evaluating-model-apis.md) covers judge calibration.
 
 Other costs include extra latency, support work, and maintaining optimization policies. Editing a previously stable prefix can also reduce prompt-cache reuse. Shorter input is not automatically cheaper than cached input.
 
@@ -47,7 +47,7 @@ Our product recommendation is to compare **total cost per successful task under 
 
 Count routing, compression, verification, retries, escalations, and applicable platform fees. Include failed attempts in total spend. Divide by tasks passing the acceptance rule, not by HTTP-successful calls. Account for operating effort and human rework separately where they cannot be reliably allocated.
 
-The [API evaluation guide](evaluating-model-apis.md#5-compare-under-declared-conditions) explains call-versus-task accounting. Evaluating an optimization still requires the actual application path, including any downstream work it causes. Keep hard requirements and difficult cases visible: an attractive average must not hide an unacceptable failure.
+The [API evaluation guide](../evaluation/evaluating-model-apis.md#5-compare-under-declared-conditions) explains call-versus-task accounting. Evaluating an optimization still requires the actual application path, including any downstream work it causes. Keep hard requirements and difficult cases visible: an attractive average must not hide an unacceptable failure.
 
 Use the direct provider path with native caching enabled where appropriate as the baseline. Otherwise, a gateway may claim savings that were already available without it.
 

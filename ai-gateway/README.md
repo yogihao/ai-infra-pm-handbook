@@ -26,7 +26,7 @@ Separate user and application identities from project usage. Design self-service
 
 Understand tokens, RPM, TPM, concurrency, TTFT, generation speed, and measurement boundaries.
 
-[How to Evaluate a Model API: From Benchmarks to Product Fit](evaluating-model-apis.md)
+[How to Evaluate a Model API: From Benchmarks to Product Fit](../evaluation/evaluating-model-apis.md)
 
 Compare task quality, service behavior, capacity, and cost against the needs of a real workload.
 
